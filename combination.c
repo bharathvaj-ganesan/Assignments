@@ -27,7 +27,7 @@ int main()
                     }
                     printf("\n");
                 }
-                // unstack all the zeros until top of stack is equals "1"
+                // unstack all the zeros until top of stack  equals "1"
                 while (stack[p]==0 && p>=0)
                 {
                     p=p-1;
