@@ -26,7 +26,7 @@ int main()
                 printf("%d ",v[i]);
               printf("\n");
          }
-    // unstack all the zeros until top of stack is equals "1"
+    // unstack all the zeros until top of stack  equals "1"
          while (stack[sp]==0 && sp>=0)
             sp=sp-1;
    // stop when bottom is reached
