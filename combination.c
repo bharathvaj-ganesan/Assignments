@@ -1,44 +1,39 @@
 
-/* the array size can be set  from 1 to 100 for the input limit */
+/* the limit ranges from 1 to 100 */
 
 #include <stdio.h>
+#include <stdlib.h>
 int main()
 {
-        int p= -1,i,n, a[100], stack[100];
-        printf(" Enter the limit : ");
-        scanf("%d",&n);
-        for (i=0 ; i<n ; i++)
-        {
-                a[i]=i+1;
-        }
-        while(1)
-        {
-                // this loops executes until stack overflows
-                while(p<n-1)
-                {
-                    p=p+1;
-                    stack[p]=1;
-                    for (i=0 ; i<=p ; i++)
-                    {
-                        if (stack[i]==1)
-                        {
-                            printf("%d ",a[i]);
-                        }
-                    }
-                    printf("\n");
-                }
-                // unstack all the zeros until top of stack  equals "1"
-                while (stack[p]==0 && p>=0)
-                {
-                    p=p-1;
-                }
-                // set top of stack  to "0" for each loop iteration
-                stack[p]=0;
-                // stop when bottom is reached
-                if (p<0)
-                {
-                    break;
-                }
-        }
-        return 0;
+    int sp,i,n, v[100], stack[100];
+    printf(" Enter the limit : ");
+    scanf("%d",&n);
+    printf(" Enter the numbers : ");
+    for (i=0 ; i<n ; i++)
+    {
+        scanf("%d",&v[i]);
+    }
+    sp=-1;
+    while(1)
+    {
+        // this loops executes until stack overflows
+          while(sp<n-1)
+         {
+              sp=sp+1;
+              stack[sp]=1;
+              for (i=0 ; i<=sp ; i++)
+                if (stack[i]==1)
+                printf("%d ",v[i]);
+              printf("\n");
+         }
+    // unstack all the zeros until top of stack is equals "1"
+         while (stack[sp]==0 && sp>=0)
+            sp=sp-1;
+   // stop when bottom is reached
+         if (sp<0)
+        break;
+    // set top of stack  to "0" for each loop iteration
+          stack[sp]=0;
+      }
+    return 0;
 }
