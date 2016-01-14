@@ -4,7 +4,7 @@ int main()
 {
     int i;
     char a[12]={'H','A','P','P','Y',' ','P','O','N','G','A','L'};
-    /* "HAPPY PONGAL" will be repeated infinite times */
+    /* "HAPPY PONGAL" will be displayed infinite times */
     while(1)
     {
         for(i=0;i<=12;i++)
