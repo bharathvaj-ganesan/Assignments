@@ -8,9 +8,9 @@ int main()
 	scanf("%d",&n);
 	if (n<0)
 	{
-       	printf("Negative numbers cannot be converted");
+        printf("Negative numbers cannot be converted");
        	return 0;
-    }
+        }
 	printf("Enter the base to convert ");
 	scanf("%d",&b);
 	n1=n;
