@@ -10,7 +10,7 @@ int main()
 	{
         printf("Negative numbers cannot be converted");
        	return 0;
-        }
+    }
 	printf("Enter the base to convert ");
 	scanf("%d",&b);
 	n1=n;
