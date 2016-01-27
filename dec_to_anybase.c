@@ -2,15 +2,15 @@
 void con(int , int);
 int main()
 {
-    int n,n1,b;
+        int n,n1,b;
 	printf("\n Conversion from decimal To Any Base Up to 36 \n");
 	printf("Enter the decimal number ");
 	scanf("%d",&n);
 	if (n<0)
 	{
-        printf("Negative numbers cannot be converted");
-       	return 0;
-    }
+        	printf("Negative numbers cannot be converted");
+       		return 0;
+        }
 	printf("Enter the base to convert ");
 	scanf("%d",&b);
 	n1=n;
