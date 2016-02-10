@@ -4,7 +4,7 @@ int main()
 {
     int a,b,c,i,sum = 0;
     printf("Enter the three numbers");
-	  scanf("%d%d%d",&a,&b,&c);
+    scanf("%d%d%d",&a,&b,&c);
     printf("\n Using variables :");
     printf("\t %d",a+b+c);
     printf("\n Using array :");
