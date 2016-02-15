@@ -20,7 +20,7 @@ int main()
            		arr2d[i][j]=0;
         	}
     	}
-    	srand(time(NULL));
+    	srand(time(NULL));  // Refered internet for srand() function.
 	for(i=0; i<row; i++)
     	{
         	for(j=0; j<column; j++)
