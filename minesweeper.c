@@ -1,5 +1,7 @@
 #include<stdio.h>
-#include <time.h>
+#include<time.h>
+#include<math.h>
+#include<malloc.h>
 
 void ms(int* [],int, int);
 int binarcolumn_rand();
