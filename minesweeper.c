@@ -105,7 +105,7 @@ void ms(int *array[], int row, int column)
         	    }
 		    else
             	    {
-                	 array[i][j] = 'x';
+                	 array[i][j] = -1;
             	    }
 	      }
         }
