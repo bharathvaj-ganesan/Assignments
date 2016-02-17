@@ -5,7 +5,7 @@ int main()
     printf("Enter the value for N , S and D : ");
     scanf("%d%d%d",&n,&s,&d);
 
-    for(i=0;i<n-1;i++)
+    for(i=0;i<n;i++)
     {
         printf("%d\t",s);
         s=s+d;
