@@ -24,11 +24,6 @@ int main()
 	}
 	for(i=0;i<c;i++)
 	{
-		printf("%d\t",arr[i]);
-	}
-	printf("\n");
-	for(i=0;i<c;i++)
-	{
 		arr1[i]=arr[i];
 	}
 	pivot=c/2;
@@ -80,5 +75,6 @@ int main()
 
 	return 0;
 }
+
 
 				
