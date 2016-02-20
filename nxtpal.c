@@ -70,7 +70,7 @@ int main()
     }
 	for(i=0;i<c;i++)
 	{
-		printf("%d\t",arr1[i]);
+		printf("%d",arr1[i]);
 	}
 
 	return 0;
