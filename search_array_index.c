@@ -12,7 +12,8 @@ int main()
     {
         scanf("%d",&arr[i]);
     }
-    arr[size]=-000000000;
+    size--;
+    arr[size]=-999999999;
     printf("\n Number :");
     scanf("%d",&search_element);
     index=inArray(arr,search_element);
@@ -22,7 +23,7 @@ int main()
 int inArray(int arr[],int search_element)
 {
     int i=0;
-    while(arr[i]!= -000000000)
+    while(arr[i]!= -999999999)
     {
         if(search_element==arr[i])
         {
