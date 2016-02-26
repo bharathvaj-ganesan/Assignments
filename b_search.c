@@ -13,7 +13,6 @@ int main()
 	}
 	printf("Enter the search key : ");
 	scanf("%d",&s_key);
-
 	printf("%d\n",binarysearch(arr,s_key,0,n));
 	return 0;
 }
@@ -30,7 +29,6 @@ int binarysearch(int arr[],int s_key,int start,int end)
 		else if (arr[middle] > s_key)
 		{
 			binarysearch(arr,s_key,start,middle-1);
-
 		}
 		else
 		{
