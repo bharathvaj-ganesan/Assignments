@@ -1,8 +1,9 @@
 #include<stdio.h>
 int concat(int ,int );
+int digits(int );
 int main()
 {
-    int n,n1,result,tc=0,k,m,t,p=1;
+    int n,n1,result,tc=0,k,m,t,p;
     printf("Enter the number :");
     scanf("%d",&n);
     int l=log10(n);
@@ -18,11 +19,7 @@ int main()
     {
         if(l%2==0)      //even number of digits
         {
-            while(mid)
-            {
-                p *=10;
-                mid--;
-            }
+            p=digits(mid);
             t=n%p;
             n=n/p;
             result=concat(t,n);
@@ -30,13 +27,9 @@ int main()
         }
         else            //odd number of digits
         {
-            while(mid)
-            {
-                p *=10;
-                mid--;
-            }
+            p=digits(mid);
             t=n%p;  //getting last half
-            n=n/p;  
+            n=n/p;
             m=n%10;   // getting middle value
             n=n/10;
             result=concat(t,m);
@@ -61,3 +54,14 @@ int concat(int x ,int y)        //concatenate two numbers for example: 12 and 34
     }
     return x*p+y;
 }
+int digits(int mid)
+{
+    int p=1;
+    while(mid)
+    {
+        p *=10;
+        mid--;
+    }
+   return p;
+}
+
