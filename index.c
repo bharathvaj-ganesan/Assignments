@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main()
 {
-	  int i,n,k,index;
-	  int a[100];
+    int i,n,k,index;
+    int a[100];
   	printf("\n enter the size of the array");
   	scanf("%d",&n);
   	printf("\n enter the elements");
